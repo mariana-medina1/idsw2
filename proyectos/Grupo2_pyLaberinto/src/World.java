@@ -104,7 +104,7 @@ public class World{
                 for (this.column=0; this.column<maze[this.row].length; this.column = this.column+1) {
                     
                     if (this.row==this.actualRow && this.column==this.actualColumn) {
-						character.getChoice();
+						System.out.print(character.getChoice());
 					} else if((this.actualColumn+viewport>=this.column)&&(this.actualColumn-viewport<=this.column)) {
                         if ((Math.pow(this.actualRow-this.row,2)+Math.pow(this.actualColumn-this.column,2))<=(Math.pow(torch,2))) {	
 

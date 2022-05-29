@@ -2,7 +2,7 @@
 public class Character {
 
     private String name;
-    private String CharacterRep;
+    private String CharacterRep = "_O_";
     private World world = new World();
 
     public Character() {
@@ -90,19 +90,19 @@ public class Character {
         boolean horse = false;
         boolean flyingCarpet = false;
 
-        if (option == "h") {
+        if (option.equalsIgnoreCase("h")) {
             if (boat == true || flyingCarpet == true) {
                 boat = false;
                 flyingCarpet = false;
             }
             horse = !horse;
-        } else if (option == "b") {
+        } else if (option.equalsIgnoreCase("b")) {
             if (horse == true || flyingCarpet == true) {
                 horse = false;
                 flyingCarpet = false;
             }
             boat = !boat;
-        } else if (option == "c") {
+        } else if (option.equalsIgnoreCase("c")) {
             if (boat == true || horse == true) {
                 boat = false;
                 horse = false;

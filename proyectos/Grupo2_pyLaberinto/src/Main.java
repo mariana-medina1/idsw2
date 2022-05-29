@@ -44,10 +44,10 @@ public class Main {
 
             world.showMaze(sun.getBrightness(), viewport, playerPosition, character);
 
-			System.out.print("Lat:[" + "00" + "] Long:[" + "00" + "] - ");
+			System.out.print("Lat:[" + playerPosition.getX() + "] Long:[" + playerPosition.getY() + "] - ");
 			System.out.println("[" + time.getHour() + "]h:[" + time.getMinutes() + "]m     ");
 			System.out.println();
-			System.out.println("Commands: w/a/s/d (f:exit) (b:boat) (c:horse) (x:Flying carpet)");
+			System.out.println("Commands: w/a/s/d (f:exit) (b:boat) (h:horse) (c:Flying carpet)");
 			selection = enter.nextLine();
 
 			character.setChoice(selection);
